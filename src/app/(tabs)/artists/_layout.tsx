@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { StackScreenSearchBar } from '@/constants/layout'
 import { defaultStyles } from '@/styles'
 import { Stack } from 'expo-router'
 import { View } from 'react-native'
@@ -9,8 +10,9 @@ const ArtistsLayout = () => {
 		<View style={defaultStyles.container}>
 			<Stack>
 				<Stack.Screen
-					name="artists"
+					name="index"
 					options={{
+						...StackScreenSearchBar,
 						headerTitle: 'Artists',
 					}}
 				/>

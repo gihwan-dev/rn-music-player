@@ -14,7 +14,10 @@
 		},
 		"ios": {
 			"supportsTablet": true,
-			"bundleIdentifier": "com.gihwandev.music.player"
+			"bundleIdentifier": "com.gihwandev.music.player",
+			"infoPlist": {
+				"UIBackgroundModes": ["audio"]
+			}
 		},
 		"android": {
 			"adaptiveIcon": {
